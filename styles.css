@@ -42,6 +42,12 @@ a:hover {
 	.container3 {
 		background-color: var(--main-pinklight);
 	}
+	.social-items {
+		color: var(--main-teal);
+	}
+	.circle {
+		border: 1px solid var(--main-teal);
+	}
 }
 
 @media (max-width: 1200px) {
@@ -65,6 +71,12 @@ a:hover {
 
 	.container3 {
 		background-color: var(--main-pinklight);
+	}
+	.social-items {
+		color: var(--main-teal);
+	}
+	.circle {
+		border: 1px solid var(--main-teal);
 	}
 }
 
@@ -90,6 +102,12 @@ a:hover {
 
 	.container3 {
 		background-color: var(--main-pinklight);
+	}
+	.social-items {
+		color: var(--main-teal);
+	}
+	.circle {
+		border: 1px solid var(--main-teal);
 	}
 }
 
@@ -117,6 +135,12 @@ a:hover {
 	.container3 {
 		background-color: var(--main-teal);
 		margin: 0 55px 40px;
+	}
+	.social-items {
+		color: var(--main-blue);
+	}
+	.circle {
+		border: 1px solid var(--main-blue);
 	}
 }
 
@@ -197,7 +221,21 @@ a:hover {
 	flex-wrap: wrap;
 }
 .social-items {
-	margin-right: 10px;
+	margin-right: 5px;
+	font-size: 20px;
+}
+.social-items:hover {
+	color: var(--main-yellow);
+}
+.circle {
+	height: 40px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .general-btn {
 	display: flex;
