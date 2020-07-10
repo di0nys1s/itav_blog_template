@@ -1,0 +1,213 @@
+:root {
+	--main-yellow: #fed11f;
+	--main-blue: #2f4190;
+	--main-white: #ffffff;
+	--main-pinklight: #feecdd;
+	--main-teal: #20c997;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	color: var(--main-blue);
+	font-family: 'Open Sans', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: var(--main-yellow);
+}
+
+@media (min-width: 1200px) {
+	.container1 {
+		min-height: 700px;
+	}
+	.container2 {
+		padding: 0 120px;
+	}
+
+	.container3 {
+		background-color: var(--main-pinklight);
+	}
+}
+
+@media (max-width: 1200px) {
+	.main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 0.2fr;
+		grid-template-areas:
+			'container2 container2 container2 container3'
+			'container2 container2 container2 .'
+			'container2 container2 container2 .'
+			'container2 container2 container2 .'
+			'container4 container4 container4 container4';
+	}
+	.container1 {
+		min-height: 600px;
+	}
+	.container2 {
+		padding: 0 100px;
+	}
+
+	.container3 {
+		background-color: var(--main-pinklight);
+	}
+}
+
+@media (max-width: 992px) {
+	.main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 0.75fr 0.8fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 0.2fr;
+		grid-column-gap: 20px;
+		grid-template-areas:
+			'container2 container2 container2 container3 container3'
+			'container2 container2 container2 .          . '
+			'container2 container2 container2 .          . '
+			'container2 container2 container2 .          . '
+			'container4 container4 container4 container4 container4';
+	}
+	.container1 {
+		min-height: 400px;
+	}
+	.container2 {
+		padding: 0 80px;
+	}
+
+	.container3 {
+		background-color: var(--main-pinklight);
+	}
+}
+
+@media (max-width: 700px) {
+	.main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			'container2'
+			'container2'
+			'container2'
+			'container2'
+			'container2'
+			'container3'
+			'container4';
+	}
+	.container1 {
+		min-height: 300px;
+	}
+	.container2 {
+		padding: 0 60px;
+	}
+
+	.container3 {
+		background-color: var(--main-teal);
+		margin: 0 55px 40px;
+	}
+}
+
+.container1 {
+	display: grid;
+	background: url(./vs.PNG);
+	background-size: cover;
+	background-position: center;
+	align-items: start;
+	justify-content: center;
+}
+.main-image {
+	width: 100%;
+	height: auto;
+}
+.container2 {
+	grid-area: container2;
+	background-color: var(--main-white);
+	text-align: left;
+}
+.container3 {
+	grid-area: container3;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	line-height: 1.7;
+}
+.container4 {
+	grid-area: container4;
+	text-align: center;
+	padding: 70px 50px;
+	background-color: var(--main-pinklight);
+}
+.content {
+	margin: 30px 0;
+}
+.prev-next-links {
+	display: flex;
+	justify-content: space-between;
+}
+.prev-next-links a {
+	color: var(--main-blue);
+	line-height: 2;
+}
+.prev-next-links h4:hover {
+	color: var(--main-yellow);
+	border-color: var(--main-yellow);
+}
+.prev-next-links h4 {
+	border-bottom: 1.4px solid var(--main-blue);
+}
+.prev-next-links {
+	margin: 30px 0;
+}
+.post-date-writer {
+	font-weight: 500;
+	margin-top: -10px;
+}
+.post-tag {
+	letter-spacing: 2px;
+	color: var(--main-teal);
+	margin-top: -10px;
+}
+.sidebar-items {
+	margin-bottom: 50px;
+}
+.item-category ul {
+	padding: 0 20px;
+}
+.cat-main-header {
+	margin-top: 100px;
+}
+.social-list {
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.social-items {
+	margin-right: 10px;
+}
+.general-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	background-color: #ffffff;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	border-radius: 0px;
+	border: 2px solid var(--main-yellow);
+	color: #fed11f;
+	padding: 25px 40px;
+	margin: 20px 0;
+}
+.general-btn:hover {
+	background-color: var(--main-yellow);
+	color: var(--main-white);
+}
+.ct-link-button {
+	display: inline-block;
+}
