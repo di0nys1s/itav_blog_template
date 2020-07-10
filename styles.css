@@ -21,8 +21,19 @@ a:hover {
 }
 
 @media (min-width: 1200px) {
+	.main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 0.2fr;
+		grid-template-areas:
+			'container2 container2 container2 container3'
+			'container2 container2 container2 .'
+			'container2 container2 container2 .'
+			'container2 container2 container2 .'
+			'container4 container4 container4 container4';
+	}
 	.container1 {
-		min-height: 700px;
+		min-height: 600px;
 	}
 	.container2 {
 		padding: 0 120px;
@@ -46,7 +57,7 @@ a:hover {
 			'container4 container4 container4 container4';
 	}
 	.container1 {
-		min-height: 600px;
+		min-height: 400px;
 	}
 	.container2 {
 		padding: 0 100px;
